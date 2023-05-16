@@ -1,0 +1,144 @@
+body{
+    background-color:rgb(13, 10, 32);
+    font-family: 'curve', sans-serif;
+    font-size: 16px;
+    color: #faf5f5;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid #eee;
+  }
+  
+  
+  
+  /* For mobile phones: */
+  @media only screen and (max-width: 768px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+  
+  /* For mobile phones and tablets: */
+  @media only screen and (max-width: 768px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+  
+  /* For desktop: */
+  @media only screen and (min-width: 768px) {
+    .container {
+      width: 750px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* For big screens: */
+  @media only screen and (min-width: 992px) {
+    .container {
+      width: 970px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* For big screens: */
+  @media only screen and (min-width: 1200px) {
+    .container {
+      width: 1170px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* For big screens: */
+  @media only screen and (min-width: 1400px) {
+    .container {
+      width: 1370px;
+      margin: 0 auto;}
+}
+.container {
+    text-align: center;
+  }
+ 
+  
+  h1 {
+    color: rgb(73, 209, 254);
+    margin-top: 50px;
+  }
+  
+  #stopwatch, #timer {
+    margin-top: 50px;
+  }
+  
+  #stopwatch-display {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  #timer-input {
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  
+
+    button{
+      background-color: #222242;
+      padding: 10px 38px;
+      border: 1px solid #A9A9A9;
+      border-radius: 28px;
+      color: #fff;
+      transition: all .2s ease;
+      outline: 0;
+  }
+  button:not(:last-child){
+      margin-right: 20px;
+  }
+  button:hover,
+  button:focus
+  {
+      border-color: #F6B400;
+      color: #F6B400;
+      box-shadow: 0px 4px 27px -12px #F6B400;
+  }
+ .container p{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    color: #ffffff;
+    z-index: 9999;
+    font-size: 48px;
+    margin-bottom: 120px;
+}
+  .container p::before{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    background-color: #151538;
+    z-index: -1;
+    border-radius: 20%;
+	left: -10%;
+    top: -110%;
+    animation-name: shine;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes shine{
+    0%,100%{
+        box-shadow: 0px 0px 32px -12px rgba(246, 180, 0, .5);
+    }
+    50%{
+        box-shadow: 0px 0px 32px 3px rgba(246, 180, 0, .5);
+    }
+}
+h2:hover{
+  color:#F6B400;;
+}
+h1:hover
+{
+    color: #F6B400;
+}
+  
+  
